@@ -434,12 +434,6 @@ Keep this in mind when adding more services behind the same tunnel:
 |---|---|
 | 80/443 | Unraid webUI (also serves `/graphql`) |
 | 3000 | unraid-monitor-backend |
-| 8080 | saleor caddy (shop/www) |
-| 8081 | drift-caddy |
-| 8082 | discord-api |
-| 9000 | dashboard (Portainer?) |
-| 3001 | docker-proxy for another container (not unraid-api!) |
-| 5000 | private Docker registry |
 
 ---
 
