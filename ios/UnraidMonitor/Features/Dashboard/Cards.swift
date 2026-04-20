@@ -301,19 +301,40 @@ struct DisksCard: View {
         Card(title: "Disks", systemImage: "internaldrive") {
             if let a = array {
                 ForEach(a.parities + a.disks + a.caches) { d in
-                    HStack {
-                        Circle().fill(d.status == "DISK_OK" ? Color.green : Color.orange).frame(width: 8, height: 8)
-                        Text(d.name).font(.subheadline)
-                        Spacer()
-                        Text(Fmt.tempInt(d.temp)).monospacedDigit().foregroundStyle(.secondary)
-                        if let errs = d.numErrors, errs > 0 {
-                            Text("\(errs) err").font(.caption).foregroundStyle(.red)
-                        }
-                    }
-                    .padding(.vertical, 2)
+                    diskRow(d)
                 }
             }
         }
+    }
+
+    @ViewBuilder
+    private func diskRow(_ d: ArrayDisk) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Circle().fill(d.status == "DISK_OK" ? Color.green : Color.orange).frame(width: 8, height: 8)
+                Text(d.name).font(.subheadline)
+                Spacer()
+                Text(Fmt.tempInt(d.temp)).monospacedDigit().foregroundStyle(.secondary)
+                if let errs = d.numErrors, errs > 0 {
+                    Text("\(errs) err").font(.caption).foregroundStyle(.red)
+                }
+            }
+            if let size = d.fsSize, size > 0, let used = d.fsUsed {
+                let pct = Double(used) / Double(size)
+                ProgressView(value: pct)
+                    .tint(pct > 0.9 ? .red : (pct > 0.75 ? .orange : .accentColor))
+                HStack {
+                    Text("\(Fmt.bytes(kb: used)) / \(Fmt.bytes(kb: size))")
+                        .font(.caption2.monospacedDigit())
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                    Text(Fmt.percent(pct))
+                        .font(.caption2.monospacedDigit())
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .padding(.vertical, 3)
     }
 }
 

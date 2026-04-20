@@ -66,7 +66,15 @@ struct ArrayDisk: Decodable, Identifiable {
     let status: String
     let temp: Int?
     let numErrors: Int?
+    let fsSize: Int64?
+    let fsUsed: Int64?
+    let fsFree: Int64?
     var id: String { name }
+
+    var usagePercent: Double? {
+        guard let size = fsSize, size > 0, let used = fsUsed else { return nil }
+        return Double(used) / Double(size)
+    }
 }
 
 struct DockerSection: Decodable {

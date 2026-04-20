@@ -8,9 +8,9 @@ export interface UnraidSnapshot {
   array: {
     state: string;
     capacity: { kilobytes: { free: string; used: string; total: string } };
-    parities: Array<{ name: string; status: string; temp: number | null }>;
-    disks: Array<{ name: string; status: string; temp: number | null; numErrors: number }>;
-    caches: Array<{ name: string; status: string; temp: number | null }>;
+    parities: Array<{ name: string; status: string; temp: number | null; fsSize: number | null; fsUsed: number | null; fsFree: number | null }>;
+    disks: Array<{ name: string; status: string; temp: number | null; numErrors: number; fsSize: number | null; fsUsed: number | null; fsFree: number | null }>;
+    caches: Array<{ name: string; status: string; temp: number | null; fsSize: number | null; fsUsed: number | null; fsFree: number | null }>;
     parityCheckStatus: {
       progress: number | null;
       running: boolean | null;
@@ -51,9 +51,9 @@ const SNAPSHOT_QUERY = gql`
     array {
       state
       capacity { kilobytes { free used total } }
-      parities { name status temp }
-      disks { name status temp numErrors }
-      caches { name status temp }
+      parities { name status temp fsSize fsUsed fsFree }
+      disks { name status temp numErrors fsSize fsUsed fsFree }
+      caches { name status temp fsSize fsUsed fsFree }
       parityCheckStatus { progress running paused errors }
     }
     docker {
