@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C8F7E17CD7474FA5FFCDE6 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23DC8296A8680E3E71715E /* DashboardViewModel.swift */; };
+		042A6C7987FF40228DBC8D4B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC763AC663D07E973617EC2 /* HistoryView.swift */; };
+		09BCF6BA92D1A009978240D8 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB96555C1B10315039C4099 /* Cards.swift */; };
+		18DCE75FFF9E9B7B595C20A5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F55F01656CC0AE0564E2BE /* Settings.swift */; };
+		23A8DF0698FAD24C9B5ECF70 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0A0CBD86244BE0F7B7DE81 /* SettingsView.swift */; };
+		2639CA429707C43D341A43D3 /* UnraidMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F6B0EEEC87680E0753B67E /* UnraidMonitorApp.swift */; };
+		3FDA0827A294F8585199C3FC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39C2D924C486791E438EF1 /* APIClient.swift */; };
+		492583CECCF1E5EAF4B5073A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBF8EB51ABA35F63902A3 /* Formatters.swift */; };
+		70323CED55540771047072DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1C3F4335CC7909A2634EE /* Models.swift */; };
+		73B7F7E13AD38EFFE2AAB466 /* PushRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1388CF4C4180260B38B20 /* PushRegistrar.swift */; };
+		8396F2C93D2E5A153703FA9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E4D24A13DC4DD7D3E4285 /* AppDelegate.swift */; };
+		94CB8ECE10CF5941D9D612BD /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9891DB9E7F09E5171EB83 /* KeychainStore.swift */; };
+		C5CFF9EF90D9741954E4CB57 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2289740C70A4A3E95650B1 /* NotificationsListView.swift */; };
+		EC80E8294B338C3B7BED56D5 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53ACA9771BB7DFEDA09855 /* DashboardView.swift */; };
+		EF349634F04E26C122A4A45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D582A00DF852A9841419ED59 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20D1388CF4C4180260B38B20 /* PushRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistrar.swift; sourceTree = "<group>"; };
+		247E4D24A13DC4DD7D3E4285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36F6B0EEEC87680E0753B67E /* UnraidMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnraidMonitorApp.swift; sourceTree = "<group>"; };
+		3AA9891DB9E7F09E5171EB83 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		3EC763AC663D07E973617EC2 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4A39C2D924C486791E438EF1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4B23DC8296A8680E3E71715E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4E53ACA9771BB7DFEDA09855 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		59B1C3F4335CC7909A2634EE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7EB96555C1B10315039C4099 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		88DEBF8EB51ABA35F63902A3 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		9F2289740C70A4A3E95650B1 /* NotificationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListView.swift; sourceTree = "<group>"; };
+		AB0A0CBD86244BE0F7B7DE81 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C1634B62CFF8228B79B68685 /* UnraidMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnraidMonitor.entitlements; sourceTree = "<group>"; };
+		D582A00DF852A9841419ED59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F55F01656CC0AE0564E2BE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E948441206694727B97C8619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB5B7B9EADDFD4188504FE47 /* UnraidMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnraidMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CE5D0BB7E0C7E3206F18481 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4A39C2D924C486791E438EF1 /* APIClient.swift */,
+				247E4D24A13DC4DD7D3E4285 /* AppDelegate.swift */,
+				88DEBF8EB51ABA35F63902A3 /* Formatters.swift */,
+				3AA9891DB9E7F09E5171EB83 /* KeychainStore.swift */,
+				59B1C3F4335CC7909A2634EE /* Models.swift */,
+				20D1388CF4C4180260B38B20 /* PushRegistrar.swift */,
+				E8F55F01656CC0AE0564E2BE /* Settings.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		239CD8B94CEE66DF4E3F5CAE = {
+			isa = PBXGroup;
+			children = (
+				8168EFE47D0D7D8DADD6A960 /* UnraidMonitor */,
+				3D79DD36DE91859FFEC1AB0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D79DD36DE91859FFEC1AB0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB5B7B9EADDFD4188504FE47 /* UnraidMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		719F47E327839182836D104A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A0CBD86244BE0F7B7DE81 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8168EFE47D0D7D8DADD6A960 /* UnraidMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E948441206694727B97C8619 /* Info.plist */,
+				C1634B62CFF8228B79B68685 /* UnraidMonitor.entitlements */,
+				36F6B0EEEC87680E0753B67E /* UnraidMonitorApp.swift */,
+				0CE5D0BB7E0C7E3206F18481 /* Core */,
+				F8D751A006784491E63D5260 /* Features */,
+				F6E616F76A3B723C1B648E60 /* Resources */,
+			);
+			path = UnraidMonitor;
+			sourceTree = "<group>";
+		};
+		8C3A4A12EFFA8DDCA0851FA9 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9F2289740C70A4A3E95650B1 /* NotificationsListView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		A67EF64E73535DBA919A5ECA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3EC763AC663D07E973617EC2 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		DB06A1245E16C60415EC1B28 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7EB96555C1B10315039C4099 /* Cards.swift */,
+				4E53ACA9771BB7DFEDA09855 /* DashboardView.swift */,
+				4B23DC8296A8680E3E71715E /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F6E616F76A3B723C1B648E60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D582A00DF852A9841419ED59 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8D751A006784491E63D5260 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DB06A1245E16C60415EC1B28 /* Dashboard */,
+				A67EF64E73535DBA919A5ECA /* History */,
+				8C3A4A12EFFA8DDCA0851FA9 /* Notifications */,
+				719F47E327839182836D104A /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273586233783AF0C3FBE1581 /* UnraidMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DC2FF0B90BCB9E6BE7F22F /* Build configuration list for PBXNativeTarget "UnraidMonitor" */;
+			buildPhases = (
+				51FD0566DFDDDB90E4D58940 /* Sources */,
+				F7032CE44627C24BA1D33072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnraidMonitor;
+			packageProductDependencies = (
+			);
+			productName = UnraidMonitor;
+			productReference = FB5B7B9EADDFD4188504FE47 /* UnraidMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5931298370CDAC1116E656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					273586233783AF0C3FBE1581 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 679BEA4CD09F6DE9EAF42CAD /* Build configuration list for PBXProject "UnraidMonitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 239CD8B94CEE66DF4E3F5CAE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3D79DD36DE91859FFEC1AB0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				273586233783AF0C3FBE1581 /* UnraidMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7032CE44627C24BA1D33072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF349634F04E26C122A4A45A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51FD0566DFDDDB90E4D58940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDA0827A294F8585199C3FC /* APIClient.swift in Sources */,
+				8396F2C93D2E5A153703FA9C /* AppDelegate.swift in Sources */,
+				09BCF6BA92D1A009978240D8 /* Cards.swift in Sources */,
+				EC80E8294B338C3B7BED56D5 /* DashboardView.swift in Sources */,
+				03C8F7E17CD7474FA5FFCDE6 /* DashboardViewModel.swift in Sources */,
+				492583CECCF1E5EAF4B5073A /* Formatters.swift in Sources */,
+				042A6C7987FF40228DBC8D4B /* HistoryView.swift in Sources */,
+				94CB8ECE10CF5941D9D612BD /* KeychainStore.swift in Sources */,
+				70323CED55540771047072DD /* Models.swift in Sources */,
+				C5CFF9EF90D9741954E4CB57 /* NotificationsListView.swift in Sources */,
+				73B7F7E13AD38EFFE2AAB466 /* PushRegistrar.swift in Sources */,
+				18DCE75FFF9E9B7B595C20A5 /* Settings.swift in Sources */,
+				23A8DF0698FAD24C9B5ECF70 /* SettingsView.swift in Sources */,
+				2639CA429707C43D341A43D3 /* UnraidMonitorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		148E3269C4C3738893241F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B88D487CAA58A72B357652F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnraidMonitor/UnraidMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22PC6K3J84;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UnraidMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cezarmac.unraidmonitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F3A4A7A4E1A637668AD7880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7202BC1125D650AC22D7B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnraidMonitor/UnraidMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22PC6K3J84;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UnraidMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cezarmac.unraidmonitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		679BEA4CD09F6DE9EAF42CAD /* Build configuration list for PBXProject "UnraidMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148E3269C4C3738893241F43 /* Debug */,
+				6F3A4A7A4E1A637668AD7880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7DC2FF0B90BCB9E6BE7F22F /* Build configuration list for PBXNativeTarget "UnraidMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7202BC1125D650AC22D7B29 /* Debug */,
+				5B88D487CAA58A72B357652F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C5931298370CDAC1116E656 /* Project object */;
+}
