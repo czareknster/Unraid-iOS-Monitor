@@ -2,9 +2,9 @@
 
 Monitoring, history and push alerts for a personal Unraid server, consumed by a native iOS app. Backend runs as a Docker container on Unraid, exposed securely through Cloudflare Tunnel + Zero Trust Access. The iOS app is sideloaded over a personal Apple Developer account.
 
-<div style="text-align:center">
-<img src="./media/screen.png" width="400" />
-</div>
+ <div align="center">
+    <img src="./media/screen.png" width="400" />
+  </div>
 
 ---
 
@@ -28,6 +28,7 @@ Monitoring, history and push alerts for a personal Unraid server, consumed by a 
 10. [Troubleshooting](#troubleshooting)
 11. [Security model](#security-model)
 12. [Reboot survival](#reboot-survival)
+13. [Gallery](#gellery)
 
 ---
 
@@ -643,3 +644,13 @@ Installed entry (visible with `ssh root@<UNRAID_IP> 'crontab -l'`):
 ```
 
 Worst-case detection lag is 5 minutes. If you need faster failover, drop the interval to `*/1` (once per minute) — dcron handles that fine.
+
+--
+
+## Gellery
+
+<div align="center">
+  <img src="./media/noti.png" width="400" />
+  <img src="./media/history.png" width="400" />
+  <img src="./media/settings.png" width="400" />
+</div>
