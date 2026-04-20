@@ -1,4 +1,4 @@
-# Unraid iOS Monitor
+# Unraid iOS (iPhone, iPad) Monitor
 
 Monitoring, history and push alerts for a personal Unraid server, consumed by a native iOS app. Backend runs as a Docker container on Unraid, exposed securely through Cloudflare Tunnel + Zero Trust Access. The iOS app is sideloaded over a personal Apple Developer account.
 
@@ -653,4 +653,5 @@ Worst-case detection lag is 5 minutes. If you need faster failover, drop the int
   <img src="./media/noti.png" width="400" />
   <img src="./media/history.png" width="400" />
   <img src="./media/settings.png" width="400" />
+  <img src="./media/ipad.png" width="800" />
 </div>

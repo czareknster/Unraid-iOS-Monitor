@@ -22,6 +22,8 @@
 		C5CFF9EF90D9741954E4CB57 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2289740C70A4A3E95650B1 /* NotificationsListView.swift */; };
 		EC80E8294B338C3B7BED56D5 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53ACA9771BB7DFEDA09855 /* DashboardView.swift */; };
 		EF349634F04E26C122A4A45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D582A00DF852A9841419ED59 /* Assets.xcassets */; };
+		FFA0B3BC2F96E324007EA8F8 /* DashboardCardOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0B3BB2F96E324007EA8F8 /* DashboardCardOrder.swift */; };
+		FFA0B3BE2F96E4CD007EA8F8 /* MasonryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0B3BD2F96E4CD007EA8F8 /* MasonryLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		E8F55F01656CC0AE0564E2BE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E948441206694727B97C8619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FB5B7B9EADDFD4188504FE47 /* UnraidMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnraidMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA0B3BB2F96E324007EA8F8 /* DashboardCardOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCardOrder.swift; sourceTree = "<group>"; };
+		FFA0B3BD2F96E4CD007EA8F8 /* MasonryLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonryLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -116,6 +120,8 @@
 		DB06A1245E16C60415EC1B28 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0B3BD2F96E4CD007EA8F8 /* MasonryLayout.swift */,
+				FFA0B3BB2F96E324007EA8F8 /* DashboardCardOrder.swift */,
 				7EB96555C1B10315039C4099 /* Cards.swift */,
 				4E53ACA9771BB7DFEDA09855 /* DashboardView.swift */,
 				4B23DC8296A8680E3E71715E /* DashboardViewModel.swift */,
@@ -170,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					273586233783AF0C3FBE1581 = {
 						ProvisioningStyle = Automatic;
@@ -217,7 +223,9 @@
 				09BCF6BA92D1A009978240D8 /* Cards.swift in Sources */,
 				EC80E8294B338C3B7BED56D5 /* DashboardView.swift in Sources */,
 				03C8F7E17CD7474FA5FFCDE6 /* DashboardViewModel.swift in Sources */,
+				FFA0B3BE2F96E4CD007EA8F8 /* MasonryLayout.swift in Sources */,
 				492583CECCF1E5EAF4B5073A /* Formatters.swift in Sources */,
+				FFA0B3BC2F96E324007EA8F8 /* DashboardCardOrder.swift in Sources */,
 				042A6C7987FF40228DBC8D4B /* HistoryView.swift in Sources */,
 				94CB8ECE10CF5941D9D612BD /* KeychainStore.swift in Sources */,
 				70323CED55540771047072DD /* Models.swift in Sources */,
@@ -236,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -268,6 +277,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 22PC6K3J84;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -292,6 +302,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.10;
@@ -306,7 +317,6 @@
 				CODE_SIGN_ENTITLEMENTS = UnraidMonitor/UnraidMonitor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 22PC6K3J84;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = UnraidMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +325,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cezarmac.unraidmonitor;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -323,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -355,6 +370,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 22PC6K3J84;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -372,6 +388,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.10;
@@ -386,7 +403,6 @@
 				CODE_SIGN_ENTITLEMENTS = UnraidMonitor/UnraidMonitor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 22PC6K3J84;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = UnraidMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +411,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cezarmac.unraidmonitor;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
