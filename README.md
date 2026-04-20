@@ -2,6 +2,10 @@
 
 Monitoring, history and push alerts for a personal Unraid server, consumed by a native iOS app. Backend runs as a Docker container on Unraid, exposed securely through Cloudflare Tunnel + Zero Trust Access. The iOS app is sideloaded over a personal Apple Developer account.
 
+<div style="text-align:center">
+<img src="./media/screen.png" width="400" />
+</div>
+
 ---
 
 ## Table of Contents
